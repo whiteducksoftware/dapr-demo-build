@@ -1,0 +1,12 @@
+componentType: pubsub.azure.servicebus
+version: v1
+metadata:
+- name: connectionString
+  secretRef: connectionstringsecret
+secrets:
+- name: connectionstringsecret
+  value: <CONNECTION-STRING>
+scopes:
+- dapr-demo-message-service
+- dapr-demo-notification-service
+- dapr-demo-pwsh-service
